@@ -1,244 +1,380 @@
+Skip to content
+
+
+This repository
+ 
+Pull requests 
+Issues 
+Gist
+
+
+
+Sign out 
+
+
+ Watch 
+0 
+ Star 
+0 
+ Fork 
+0 
+
+pblynn/pblynn.github.io 
+ Code 
+ Issues 0 
+ Pull requests 0 
+ Projects 0 
+ Wiki 
+ Pulse 
+ Graphs 
+ Settings 
+Branch: master 
+Find file 
+Copy path
+pblynn.github.io/test.html 
+dc4f9f6 2 minutes ago 
+ pblynn Create test.html 
+1 contributor 
+ 
+Raw
+Blame
+History
+   
+168 lines (143 sloc) 3.35 KB 
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="referrer" content="origin">
-	
-		<title>Consultan.See</title>
-	
-	<link rel="icon" src="/favicon.ico">
-
-    
-        <script type="text/javascript" src="https://cdn.ravenjs.com/3.7.0/raven.min.js"></script>
-        <script type="text/javascript">
-            Raven.config("https://89c9b4d1ba2344e39cb832ad3891105e@sentry.io/104222", {logger: "javascript"}).install();
-        </script>
-    
-    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	
-	<script type="text/javascript" src="https://dteyv52hbg2at.cloudfront.net/js/plugins/bootstrap/bootstrap.min.js?6.0.29.4"></script>
-	<script type="text/javascript" src="https://dteyv52hbg2at.cloudfront.net/js/publicsite/login-min.js?6.0.29.4"></script>
-	<link rel="stylesheet" type="text/css" href="https://dteyv52hbg2at.cloudfront.net/css/publicsite/login-min.css?6.0.29.4" />
-
-	<!--[if lt IE 9]>
-	<script src="https://dteyv52hbg2at.cloudfront.net/js/plugins/html5shiv.js?6.0.29.4"></script>
-	<![endif]-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 * {box-sizing:border-box}
+
 body {font-family: Verdana,sans-serif;margin:0}
+
 .mySlides {display:none}
 
+
+
 /* Slideshow container */
+
 .slideshow-container {
+
   max-width: 1000px;
+
   position: relative;
+
   margin: auto;
+
 }
+
+
 
 /* Next & previous buttons */
+
 .prev, .next {
+
   cursor: pointer;
+
   position: absolute;
+
   top: 50%;
+
   width: auto;
+
   padding: 16px;
+
   margin-top: -22px;
+
   color: white;
+
   font-weight: bold;
+
   font-size: 18px;
+
   transition: 0.6s ease;
+
   border-radius: 0 3px 3px 0;
+
 }
+
+
 
 /* Position the "next button" to the right */
+
 .next {
+
   right: 0;
+
   border-radius: 3px 0 0 3px;
+
 }
+
+
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
+
   background-color: rgba(0,0,0,0.8);
+
 }
+
+
 
 /* Caption text */
+
 .text {
+
   color: #f2f2f2;
+
   font-size: 15px;
+
   padding: 8px 12px;
+
   position: absolute;
+
   bottom: 8px;
+
   width: 100%;
+
   text-align: center;
+
 }
+
+
 
 /* Number text (1/3 etc) */
+
 .numbertext {
+
   color: #f2f2f2;
+
   font-size: 12px;
+
   padding: 8px 12px;
+
   position: absolute;
+
   top: 0;
+
 }
+
+
 
 /* The dots/bullets/indicators */
+
 .dot {
+
   cursor:pointer;
+
   height: 13px;
+
   width: 13px;
+
   margin: 0 2px;
+
   background-color: #bbb;
+
   border-radius: 50%;
+
   display: inline-block;
+
   transition: background-color 0.6s ease;
+
 }
+
+
 
 .active, .dot:hover {
+
   background-color: #717171;
+
 }
+
+
 
 /* Fading animation */
+
 .fade {
+
   -webkit-animation-name: fade;
+
   -webkit-animation-duration: 1.5s;
+
   animation-name: fade;
+
   animation-duration: 1.5s;
+
 }
+
+
 
 @-webkit-keyframes fade {
+
   from {opacity: .4} 
+
   to {opacity: 1}
+
 }
+
+
 
 @keyframes fade {
+
   from {opacity: .4} 
+
   to {opacity: 1}
+
 }
 
+
+
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
+
   .prev, .next,.text {font-size: 11px}
+
 }
+
 </style>
+
 </head>
+
 <body>
+
+
 
 <div class="slideshow-container">
 
+
+
 <div class="mySlides fade">
+
   <div class="numbertext">1 / 3</div>
+
   <img src="img_nature_wide.jpg" style="width:100%">
+
   <div class="text">Caption Text</div>
+
 </div>
 
+
+
 <div class="mySlides fade">
+
   <div class="numbertext">2 / 3</div>
+
   <img src="img_fjords_wide.jpg" style="width:100%">
+
   <div class="text">Caption Two</div>
+
 </div>
 
+
+
 <div class="mySlides fade">
+
   <div class="numbertext">3 / 3</div>
+
   <img src="img_mountains_wide.jpg" style="width:100%">
+
   <div class="text">Caption Three</div>
+
 </div>
+
+
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+
+
 </div>
+
 <br>
 
+
+
 <div style="text-align:center">
+
   <span class="dot" onclick="currentSlide(1)"></span> 
+
   <span class="dot" onclick="currentSlide(2)"></span> 
+
   <span class="dot" onclick="currentSlide(3)"></span> 
+
 </div>
 
+
+
 <script>
+
 var slideIndex = 1;
+
 showSlides(slideIndex);
 
+
+
 function plusSlides(n) {
+
   showSlides(slideIndex += n);
+
 }
+
+
 
 function currentSlide(n) {
+
   showSlides(slideIndex = n);
+
 }
 
+
+
 function showSlides(n) {
+
   var i;
+
   var slides = document.getElementsByClassName("mySlides");
+
   var dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}    
+
   if (n < 1) {slideIndex = slides.length}
+
   for (i = 0; i < slides.length; i++) {
+
       slides[i].style.display = "none";  
+
   }
+
   for (i = 0; i < dots.length; i++) {
+
       dots[i].className = dots[i].className.replace(" active", "");
+
   }
+
   slides[slideIndex-1].style.display = "block";  
+
   dots[slideIndex-1].className += " active";
+
 }
+
 </script>
+
+
 
 </body>
 
-<script>$(function(){oUtils.initLoginPhoto('http://www.nas.gov.sg/archivesonline/watermark/picas_data/tn_pcd/20110124001/img0001.jpg')});</script>
-				
-			<body>
-		
-			
-				<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W83BLT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'}); var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-W83BLT');</script>
-				
-            	
-			<div class="sp"></div>
-			<div class="box-page login-box-page ">
-				<div class="box">
-					
-						<a href="home.html" class="logo protoio-logo">consultan.see</a>
-					
-	<div class="form-container">
-		<h1>Sign in</h1>
-		
-		<form action="" method="post" id="login-form">
-			<input type="hidden" name="action" value="login">
-			<input type="hidden" name="csrf_token" value="E2129B21B1A37CE69159DCBF02B154CC397C32BCB1F81410BFA0C10AE987BF36" />
-			<fieldset>
-				<div class="form-group loginfield">
-					<label class="control-label" for="email">Email</label>
-					<input class="form-control" id="email" type="email" name="email" value="" placeholder="Your email">
-					<div class="msg-position bottom"></div>
-				</div>
-				<div class="form-group loginfield">
-					<label class="control-label" for="password">Password</label>
-					<input class="form-control" type="password" name="password" value="" placeholder="Your password">
-				</div>
-				<span class="form-group fieldbox" id="fieldbox-stayin">
-					<label for="stayin" onclick=";" class="input-control checkbox">
-						<input type="checkbox" name="stayin" value="1" id="stayin" ><span class="check"></span> Keep me signed in
-					</label>
-				</span>
-			</fieldset>
-			<div class="actions">
-				<button class="btn btn-primary btn-sm blue-btn" type="submit">Sign in</button>
-			</div>
-		</form>
-		
-	</div>
-	<div class="outer-footer">
-	</div>
+</html> 
+Contact GitHub API Training Shop Blog About 
 
-				</div>
-			</div>
-			<div class="sp"></div>
-		</body>
-	</html>
-		 
+© 2017 GitHub, Inc. Terms Privacy Security Status Help 
